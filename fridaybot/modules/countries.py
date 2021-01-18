@@ -120,8 +120,8 @@ wikipedia:- {wiki}</b>
 
 
 <u><b>
-Information Gathered By tatti.
-Get Your Own tatti From @FRIDAYCHAT.</b></u>
+Information Gathered By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 """
     
     

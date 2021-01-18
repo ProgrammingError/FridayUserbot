@@ -36,8 +36,8 @@ Note:- Yandex is a Russian search engine, so better open link in chrome with aut
 Another Note:- Don't Use This Command continually, Yandex Will Block Your Request.
 
 
-<u><b>Reverse Search Completed By tatti.
-Get Your Own tatti From @FRIDAYCHAT.</b></u>
+<u><b>Reverse Search Completed By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 
 """
     await borg.send_message(

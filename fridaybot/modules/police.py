@@ -4,7 +4,7 @@ from uniborg.util import friday_on_cmd
 
 from fridaybot import ALIVE_NAME, CMD_HELP
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "tatti Userbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ʄʀɨɖǟʏ Userbot"
 
 
 @friday.on(friday_on_cmd(pattern=r"police"))

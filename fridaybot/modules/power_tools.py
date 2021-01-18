@@ -41,8 +41,8 @@ CMD_HELP.update(
     {
         "power_tools": "**Power Tools**\
 \n\n**Syntax : **`.restart`\
-\n**Usage :** restarts your tatti userbot.\
+\n**Usage :** restarts your ʄʀɨɖǟʏ userbot.\
 \n\n**Syntax : **`.shutdown`\
-\n**Usage :** Shuts down your tatti userbot."
+\n**Usage :** Shuts down your ʄʀɨɖǟʏ userbot."
     }
 )

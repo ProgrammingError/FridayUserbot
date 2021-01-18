@@ -72,7 +72,7 @@ async def _(event):
     else:
         sticker = await convert_to_image(event, borg)
         resize_image(sticker)
-        ok = sedpath + "/" + "@tattiOT.png"
+        ok = sedpath + "/" + "@ʄʀɨɖǟʏOT.png"
         uploaded_sticker = await borg.upload_file(
             ok, file_name=file_ext_ns_ion
         )
@@ -203,7 +203,7 @@ async def _(event):
     await moods.edit(
         f"`This Sticker Has Came To Your Pack.` \n**Check It Out** [Here](t.me/addstickers/{packshortname})"
     )
-    os.remove(sedpath + "/" + "@tattiOT.png")
+    os.remove(sedpath + "/" + "@ʄʀɨɖǟʏOT.png")
 
 
 @friday.on(friday_on_cmd(pattern="packinfo"))
@@ -414,7 +414,7 @@ def resize_image(image):
         im = im.resize(sizenew)
     else:
         im.thumbnail(maxsize)
-    file_name = "@tattiOT.png"
+    file_name = "@ʄʀɨɖǟʏOT.png"
     ok = sedpath + "/" + file_name
     im.save(ok, "PNG")
 

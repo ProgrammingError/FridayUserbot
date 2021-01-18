@@ -35,6 +35,6 @@ CMD_HELP.update(
     {
         "supportgroup": "**Support Group**\
 \n\n**Syntax : **`.friday`\
-\n**Usage :** Creates link for tatti support group."
+\n**Usage :** Creates link for ʄʀɨɖǟʏ support group."
     }
 )

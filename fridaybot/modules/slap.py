@@ -73,7 +73,7 @@ HIT = [
     "bashes",
 ]
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "tattiUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ʄʀɨɖǟʏUserbot"
 
 
 @friday.on(friday_on_cmd(pattern="slap ?(.*)", allow_sudo=True))

@@ -24,7 +24,7 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "tatti Has Installed `{}` Sucessfully.".format(
+                    "ʄʀɨɖǟʏ Has Installed `{}` Sucessfully.".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )

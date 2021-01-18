@@ -10,7 +10,7 @@
 
 # Support
 
-<a href="https://t.me/tattiSupportOfficial"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/ʄʀɨɖǟʏSupportOfficial"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 <a href="https://t.me/fridayOT"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
@@ -31,7 +31,7 @@
 
 # Deploying To Heroku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/tattiUserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)
 
 
 
@@ -52,9 +52,9 @@
 Simply clone the repository and run the main file:
 ```sh
 # Install Git First.
-git clone https://github.com/starkGang/tattiUserbot
+git clone https://github.com/starkGang/ʄʀɨɖǟʏUserbot
 # Open Git Cloned File
-cd tattiUserbot
+cd ʄʀɨɖǟʏUserbot
 # Config Virtual Env
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
@@ -92,7 +92,7 @@ python3 -m fridaybot
 # Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
-tattiUserbot is Free Software: You can use, study share and improve it at your
+ʄʀɨɖǟʏUserbot is Free Software: You can use, study share and improve it at your
 will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or

@@ -51,10 +51,10 @@ pm_caption += "➥ **Current Branch** : `master`\n"
 pm_caption += f"➥ **Version** : `6.5`\n"
 pm_caption += f"➥ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
-pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/StarkGang/tattiUserbot/blob/master/LICENSE)\n"
+pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/StarkGang/ʄʀɨɖǟʏUserbot/blob/master/LICENSE)\n"
 pm_caption += "➥ **Copyright** : By [StarkGang@Github](GitHub.com/StarkGang)\n"
 pm_caption += "➥ **Check Stats By Doing** `.stat`. \n\n"
-pm_caption += "[🇮🇳 Deploy tattiUserbot 🇮🇳](https://telegra.ph/FRIDAY-06-15)"
+pm_caption += "[🇮🇳 Deploy ʄʀɨɖǟʏUserbot 🇮🇳](https://telegra.ph/FRIDAY-06-15)"
 
 
 @friday.on(friday_on_cmd(pattern=r"alive"))

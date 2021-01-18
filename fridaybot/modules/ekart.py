@@ -39,8 +39,8 @@ Status:- {status}
 
 Detailed link:- {urlo}
 
-<u><b>Ekart Search Completed By tatti.
-Get Your Own tatti From @FRIDAYCHAT.</b></u>
+<u><b>Ekart Search Completed By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 
 """
     await borg.send_message(

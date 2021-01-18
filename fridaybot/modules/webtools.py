@@ -1,4 +1,4 @@
-# @tattioT
+# @ʄʀɨɖǟʏoT
 
 import requests
 from iplookup import iplookup
@@ -24,7 +24,7 @@ async def _(event):
     await borg.send_file(
         event.chat_id,
         file=imgpath,
-        caption=f"**WEBSHOT OF** `{urlissed}` \n**Powered By @tattiot**",
+        caption=f"**WEBSHOT OF** `{urlissed}` \n**Powered By @ʄʀɨɖǟʏot**",
     )
     
     
