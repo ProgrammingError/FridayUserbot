@@ -11,7 +11,7 @@ import os
 import zipfile
 from collections import defaultdict
 from io import BytesIO
-from fridaybot.function import convert_to_image, crop_vid, runcmd
+from thebot.function import convert_to_image, crop_vid, runcmd
 from PIL import Image
 from telethon.errors import MessageNotModifiedError
 from telethon.errors.rpcerrorlist import StickersetInvalidError
@@ -23,8 +23,8 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from fridaybot import ALIVE_NAME, CMD_HELP
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import ALIVE_NAME, CMD_HELP
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
 if not os.path.isdir(sedpath):
@@ -924,4 +924,4 @@ CMD_HELP.update(
 \n**Usage :** Downloada the sticker."
     }
 )
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/stickers.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/stickers.py

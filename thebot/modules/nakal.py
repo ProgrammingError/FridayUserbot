@@ -15,7 +15,7 @@ import asyncio
 
 from telethon import events
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -118,4 +118,4 @@ CMD_HELP.update(
 \n**Usage :** funny plugin to abuse someone."
     }
 )
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/nakal.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/nakal.py

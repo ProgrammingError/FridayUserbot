@@ -1,13 +1,13 @@
 <<<<<<< HEAD:thebot/modules/alive.py
-"""Check if fridaybot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+"""Check if thebot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
 # CREDITS: @WhySooSerious, @Sur_vivor
 import time
 
 from uniborg.util import friday_on_cmd, sudo_cmd
 
-from fridaybot import ALIVE_NAME, CMD_HELP, Lastupdate
-from fridaybot.Configs import Config
-from fridaybot.modules import currentversion
+from thebot import ALIVE_NAME, CMD_HELP, Lastupdate
+from thebot.Configs import Config
+from thebot.modules import currentversion
 
 
 # Functions
@@ -150,4 +150,4 @@ CMD_HELP.update(
 \n**Usage :** Check if UserBot is Alive"
     }
 )
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/alive.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/alive.py

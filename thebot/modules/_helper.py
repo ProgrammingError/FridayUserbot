@@ -1,5 +1,5 @@
 <<<<<<< HEAD:thebot/modules/_helper.py
-from fridaybot import CMD_LIST
+from thebot import CMD_LIST
 
 
 @command(pattern="^.help ?(.*)")
@@ -80,4 +80,4 @@ For More Help or Support Visit @ʄʀɨɖǟʏOT"""
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
             await event.delete()
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/_helper.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/_helper.py

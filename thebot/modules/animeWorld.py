@@ -1,14 +1,14 @@
 from anime_downloader.sites import get_anime_class
 
 <<<<<<< HEAD:thebot/modules/animeWorld.py
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 from mal import AnimeSearch, Anime, MangaSearch, Manga
 =======
 from thebot import CMD_HELP
 from thebot.utils import admin_cmd
 from mal import AnimeSearch, Anime
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/anime.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/anime.py
 
 @friday.on(admin_cmd(pattern="anime (.*)"))
 async def _(event):

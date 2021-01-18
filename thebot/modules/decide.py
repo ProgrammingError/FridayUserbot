@@ -3,8 +3,8 @@
 Syntax: .decide"""
 import requests
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("decide"))
@@ -58,4 +58,4 @@ CMD_HELP.update(
 \n**Usage :** Use this plugin to quickly make a decision."
     }
 )
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/decide.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/decide.py

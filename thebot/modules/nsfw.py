@@ -33,7 +33,7 @@ async def nsfw(event):
     sedpath = "./fridaydevs/"
 =======
     sedpath = "/root/thebot/DOWNLOADS/"
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/nsfw.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/nsfw.py
     if sed and sed.media:
         if isinstance(sed.media, MessageMediaPhoto):
             photo = await borg.download_media(sed.media, sedpath)

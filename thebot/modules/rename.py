@@ -10,7 +10,7 @@ from datetime import datetime
 
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 
@@ -142,4 +142,4 @@ CMD_HELP.update(
 \n**Usage :** replyed file is renamed with new name."
     }
 )
->>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/rename.py
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:thebot/modules/rename.py
