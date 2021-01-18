@@ -5,7 +5,7 @@
 import requests
 from uniborg.util import edit_or_reply, friday_on_cmd, sudo_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(friday_on_cmd("ttt ?(.*)"))

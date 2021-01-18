@@ -5,7 +5,7 @@ originaly from : @corsicanu_bot
 
 from telethon import events
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(events.NewMessage(pattern=r"\.shout", outgoing=True))

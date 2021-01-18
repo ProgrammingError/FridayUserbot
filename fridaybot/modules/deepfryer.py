@@ -31,12 +31,12 @@
 
 import io
 from random import randint, uniform
-from fridaybot.function import convert_to_image, crop_vid, runcmd
-from fridaybot.utils import friday_on_cmd, sudo_cmd
+from thebot.function import convert_to_image, crop_vid, runcmd
+from thebot.utils import friday_on_cmd, sudo_cmd
 from PIL import Image, ImageEnhance, ImageOps
 from telethon.tl.types import DocumentAttributeFilename
 from uniborg.util import friday_on_cmd
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 import os 
 sedpath = "./starkgangz/"
 if not os.path.isdir(sedpath):

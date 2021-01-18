@@ -15,7 +15,7 @@ from telethon.errors.rpcerrorlist import (
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("phd ?(.*)"))

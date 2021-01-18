@@ -1,8 +1,8 @@
 # credits: SNAPDRAGON (@s_n_a_p_s)
 import asyncio
 import time
-from fridaybot.utils import friday_on_cmd
-from fridaybot import CMD_HELP
+from thebot.utils import friday_on_cmd
+from thebot import CMD_HELP
 
 
 @borg.on(friday_on_cmd(pattern="^.webupload ?(.+?|) (?:--)(anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|ninja)"))

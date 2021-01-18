@@ -3,8 +3,8 @@ import re
 import requests as HTTP
 from bs4 import BeautifulSoup as SOUP
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 
 
 @friday.on(admin_cmd(pattern="rmovie (.*)"))

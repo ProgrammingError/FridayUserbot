@@ -11,7 +11,7 @@ import random
 
 from telethon import events
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(events.NewMessage(pattern=r"\.gott", outgoing=True))

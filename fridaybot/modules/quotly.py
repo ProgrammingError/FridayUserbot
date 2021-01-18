@@ -26,8 +26,8 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from fridaybot import CMD_HELP, bot
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP, bot
+from thebot.utils import friday_on_cmd
 
 COLORS = [
     "#F07975",

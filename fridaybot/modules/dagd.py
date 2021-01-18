@@ -6,7 +6,7 @@ Available Commands:
 .unshort <short url>"""
 import requests
 
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("dns (.*)"))

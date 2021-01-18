@@ -2,14 +2,14 @@ import json
 import os
 import requests
 from uniborg.util import friday_on_cmd
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 from sys import argv
 import urllib3
 import os
 
 
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 data = {
    "User-Agent": "NordApp android (playstore/2.8.6) Android 9.0.0",
    "Content-Length": "55",

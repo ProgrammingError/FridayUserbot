@@ -4,9 +4,9 @@ from telethon.events import ChatAction
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from fridaybot import CMD_HELP
-from fridaybot.modules.sql_helper.mute_sql import is_muted, mute, unmute
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.modules.sql_helper.mute_sql import is_muted, mute, unmute
+from thebot.utils import friday_on_cmd
 
 
 async def get_full_user(event):
@@ -50,27 +50,27 @@ async def get_user_from_id(user, event):
 
 
 @friday.on(friday_on_cmd(pattern="gban ?(.*)"))
-async def gspider(fridaybot):
-    lol = fridaybot
+async def gspider(thebot):
+    lol = thebot
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         friday = await lol.reply("Gbanning This User !")
     else:
         friday = await lol.edit("Wait Processing.....")
-    me = await fridaybot.client.get_me()
+    me = await thebot.client.get_me()
     await friday.edit(f"Global Ban Is Coming ! Wait And Watch You Nigga")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await fridaybot.get_chat()
+    await thebot.get_chat()
     a = b = 0
-    if fridaybot.is_private:
-        user = fridaybot.chat
-        reason = fridaybot.pattern_match.group(1)
+    if thebot.is_private:
+        user = thebot.chat
+        reason = thebot.pattern_match.group(1)
     else:
-        fridaybot.chat.title
+        thebot.chat.title
     try:
-        user, reason = await get_full_user(fridaybot)
+        user, reason = await get_full_user(thebot)
     except:
         pass
     try:
@@ -84,21 +84,21 @@ async def gspider(fridaybot):
                 f"**Didn't , Your Father Teach You ? That You Cant Gban Dev**"
             )
         try:
-            from fridaybot.modules.sql_helper.gmute_sql import gmute
+            from thebot.modules.sql_helper.gmute_sql import gmute
         except:
             pass
         try:
-            await fridaybot.client(BlockRequest(user))
+            await thebot.client(BlockRequest(user))
         except:
             pass
-        testfridaybot = [
+        testthebot = [
             d.entity.id
-            for d in await fridaybot.client.get_dialogs()
+            for d in await thebot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testfridaybot:
+        for i in testthebot:
             try:
-                await fridaybot.client.edit_permissions(i, user, view_messages=False)
+                await thebot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await friday.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
             except:
@@ -116,27 +116,27 @@ async def gspider(fridaybot):
 
 
 @friday.on(friday_on_cmd(pattern="ungban ?(.*)"))
-async def gspider(fridaybot):
-    lol = fridaybot
+async def gspider(thebot):
+    lol = thebot
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         friday = await lol.reply("`Wait Let Me Process`")
     else:
         friday = await lol.edit("One Min ! ")
-    me = await fridaybot.client.get_me()
+    me = await thebot.client.get_me()
     await friday.edit(f"Trying To Ungban User !")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await fridaybot.get_chat()
+    await thebot.get_chat()
     a = b = 0
-    if fridaybot.is_private:
-        user = fridaybot.chat
-        reason = fridaybot.pattern_match.group(1)
+    if thebot.is_private:
+        user = thebot.chat
+        reason = thebot.pattern_match.group(1)
     else:
-        fridaybot.chat.title
+        thebot.chat.title
     try:
-        user, reason = await get_full_user(fridaybot)
+        user, reason = await get_full_user(thebot)
     except:
         pass
     try:
@@ -148,21 +148,21 @@ async def gspider(fridaybot):
         if user.id == 1263617196:
             return await friday.edit("**You Cant Ungban A Dev !**")
         try:
-            from fridaybot.modules.sql_helper.gmute_sql import ungmute
+            from thebot.modules.sql_helper.gmute_sql import ungmute
         except:
             pass
         try:
-            await fridaybot.client(UnblockRequest(user))
+            await thebot.client(UnblockRequest(user))
         except:
             pass
-        testfridaybot = [
+        testthebot = [
             d.entity.id
-            for d in await fridaybot.client.get_dialogs()
+            for d in await thebot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testfridaybot:
+        for i in testthebot:
             try:
-                await fridaybot.client.edit_permissions(i, user, send_messages=True)
+                await thebot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await friday.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
             except:
@@ -183,7 +183,7 @@ async def gspider(fridaybot):
 async def handler(rkG):
     if rkG.user_joined or rkG.user_added:
         try:
-            from fridaybot.modules.sql_helper.gmute_sql import is_gmuted
+            from thebot.modules.sql_helper.gmute_sql import is_gmuted
 
             guser = await rkG.get_user()
             gmuted = is_gmuted(guser.id)

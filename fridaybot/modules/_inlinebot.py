@@ -5,13 +5,13 @@ from math import ceil
 from re import findall
 from youtube_search import YoutubeSearch
 from search_engine_parser import GoogleSearch
-from fridaybot.function import _ytdl
+from thebot.function import _ytdl
 from urllib.parse import quote
 import requests
 from telethon import Button, custom, events, functions
 from youtubesearchpython import VideosSearch
-from fridaybot import ALIVE_NAME, CMD_HELP, CMD_LIST
-from fridaybot.modules import inlinestats
+from thebot import ALIVE_NAME, CMD_HELP, CMD_LIST
+from thebot.modules import inlinestats
 from pornhub_api import PornhubApi
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:

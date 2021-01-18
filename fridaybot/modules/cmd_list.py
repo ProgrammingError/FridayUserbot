@@ -1,7 +1,7 @@
 import asyncio
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
 # @command(pattern="^.cmds", outgoing=True)
@@ -9,7 +9,7 @@ from fridaybot.utils import friday_on_cmd
 async def install(event):
     if event.fwd_from:
         return
-    cmd = "ls fridaybot/modules"
+    cmd = "ls thebot/modules"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )

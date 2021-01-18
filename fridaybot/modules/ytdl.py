@@ -25,7 +25,7 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 async def progress(current, total, event, start, type_of_ps, file_name=None):

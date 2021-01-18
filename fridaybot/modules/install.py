@@ -2,8 +2,8 @@ import asyncio
 import os
 from pathlib import Path
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd, load_module
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd, load_module
 
 DELETE_TIMEOUT = 5
 
@@ -17,7 +17,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(
                 sedplugin,
-                "fridaybot/modules/",
+                "thebot/modules/",
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)

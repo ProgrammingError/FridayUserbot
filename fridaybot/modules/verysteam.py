@@ -14,7 +14,7 @@ import magic
 import requests
 from uniborg.util import friday_on_cmd, progress
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(friday_on_cmd(pattern="verystream ?(.*)", allow_sudo=True))

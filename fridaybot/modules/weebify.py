@@ -6,7 +6,7 @@ Modified by :- @kirito6969
 
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 normiefont = [
     "a",

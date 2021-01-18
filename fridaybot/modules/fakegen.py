@@ -16,7 +16,7 @@ from faker import Faker
 from faker.providers import internet	
 from uniborg.util import friday_on_cmd	
 
-from fridaybot import CMD_HELP	
+from thebot import CMD_HELP	
 
 
 @friday.on(friday_on_cmd(pattern=r"fakegen"))	

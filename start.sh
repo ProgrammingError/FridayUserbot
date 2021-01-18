@@ -5,4 +5,4 @@ echo """ ____  ____  __  ____   __   _  _
 
 (C) @FRIDAYOT @ TELEGRAM
 """
-python3 -m fridaybot
+python3 -m thebot

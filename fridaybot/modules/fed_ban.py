@@ -1,11 +1,11 @@
-from fridaybot.function import fetch_feds
-from fridaybot.modules.sql_helper.feds_sql import (
+from thebot.function import fetch_feds
+from thebot.modules.sql_helper.feds_sql import (
     add_fed,
     get_all_feds,
     is_fed_indb,
     rmfed,
 )
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 
 chnnl_grp = Config.FBAN_GROUP
 

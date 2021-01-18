@@ -5,8 +5,8 @@
 
 import requests
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 from var import Var
 
 newslog = Var.NEWS_CHANNEL_ID

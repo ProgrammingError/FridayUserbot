@@ -1,6 +1,6 @@
 from sqlalchemy import Column, UnicodeText
 
-from fridaybot.modules.sql_helper import BASE, SESSION
+from thebot.modules.sql_helper import BASE, SESSION
 
 
 class Fed(BASE):

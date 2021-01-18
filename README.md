@@ -62,7 +62,7 @@ virtualenv -p /usr/bin/python3 venv
 pip install -r requirements.txt
 # Create local_config.py with variables as given below
 # Start Bot 
-python3 -m fridaybot
+python3 -m thebot
 ```
 
 
@@ -81,7 +81,7 @@ python3 -m fridaybot
     [-] APP_ID:   You can get this value from https://my.telegram.org
     [-] API_HASH :   You can get this value from https://my.telegram.org
     
-[+] The fridaybot will not work without setting the mandatory vars.
+[+] The thebot will not work without setting the mandatory vars.
 ```
 
 

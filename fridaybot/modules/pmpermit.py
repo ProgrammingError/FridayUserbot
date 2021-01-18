@@ -5,10 +5,10 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-import fridaybot.modules.sql_helper.pmpermit_sql as pmpermit_sql
-from fridaybot import ALIVE_NAME, CUSTOM_PMPERMIT
-from fridaybot.Configs import Config
-from fridaybot.utils import friday_on_cmd
+import thebot.modules.sql_helper.pmpermit_sql as pmpermit_sql
+from thebot import ALIVE_NAME, CUSTOM_PMPERMIT
+from thebot.Configs import Config
+from thebot.utils import friday_on_cmd
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
@@ -135,7 +135,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         message_text.lower()
         if USER_BOT_NO_WARN == message_text:
-            # fridaybot's should not reply to other fridaybot's
+            # thebot's should not reply to other thebot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
         sender = await bot.get_entity(event.sender_id)

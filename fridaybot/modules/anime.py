@@ -1,7 +1,7 @@
 from anime_downloader.sites import get_anime_class
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 from mal import AnimeSearch, Anime
 
 @friday.on(admin_cmd(pattern="anime (.*)"))

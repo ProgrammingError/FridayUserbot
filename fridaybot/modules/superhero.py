@@ -21,9 +21,9 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
-from fridaybot.Configs import Config
-from fridaybot import CMD_HELP, sclient
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd, admin_cmd
+from thebot.Configs import Config
+from thebot import CMD_HELP, sclient
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd, admin_cmd
 
 
 @friday.on(admin_cmd(pattern="hero (.*)"))

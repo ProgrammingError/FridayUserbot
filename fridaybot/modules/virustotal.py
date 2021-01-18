@@ -6,9 +6,9 @@ import time
 import requests
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
-from fridaybot.Configs import Config
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
+from thebot.Configs import Config
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 # from var import var
 
@@ -86,7 +86,7 @@ async def download(target_file):
             "Need to get an API key from https://virustotal.com\nModule stopping!"
         )
         return
-    await friday.edit("Processing using fridaybot server ( ◜‿◝ )♡")
+    await friday.edit("Processing using thebot server ( ◜‿◝ )♡")
     input_str = Config.VIRUSTOTAL_API_KEY
     if not os.path.isdir(sedpath):
         os.makedirs(sedpath)

@@ -5,9 +5,9 @@ from sys import argv
 import telethon.utils
 from telethon import TelegramClient
 
-from fridaybot import bot
-from fridaybot.Configs import Config
-from fridaybot.utils import load_module, start_assistant
+from thebot import bot
+from thebot.Configs import Config
+from thebot.utils import load_module, start_assistant
 from var import Var
 
 sed = logging.getLogger("ʄʀɨɖǟʏ")
@@ -34,7 +34,7 @@ else:
 
 import glob
 
-path = "fridaybot/modules/*.py"
+path = "thebot/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -43,7 +43,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "fridaybot/modules/assistant/*.py"
+    path = "thebot/modules/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
