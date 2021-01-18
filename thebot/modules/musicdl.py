@@ -7,8 +7,8 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.tl.functions.messages import ImportChatInviteRequest
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("sdd ?(.*)"))
@@ -37,7 +37,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 songh,
-                caption="🔆**Here's the requested song!**🔆\n`Check out` [Friday fridaybot](https://github.com/StarkGang/FridayUserbot)",
+                caption="🔆**Here's the requested song!**🔆\n`Check out` [ʄʀɨɖǟʏ thebot](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
             )
             await event.delete()
         except YouBlockedUserError:

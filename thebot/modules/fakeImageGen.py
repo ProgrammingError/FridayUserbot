@@ -13,8 +13,8 @@
 
 
 import requests
-from fridaybot import CMD_HELP
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 import os
 #hmm
 @friday.on(friday_on_cmd(pattern="picgen"))
@@ -30,11 +30,11 @@ async def _(event):
       with open("FRIDAYOT.jpg", 'wb') as f:
         f.write(response.content)
     
-    captin = f"Fake Image By Friday.\nGet Your Own Friday From @FRIDAYCHAT."
+    captin = f"Fake Image By ʄʀɨɖǟʏ.\nGet Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT."
     fole = "FRIDAYOT.jpg"
     await borg.send_file(event.chat_id, fole, caption=captin)
     await event.delete()
-    os.system("rm /root/fridaybot/FRIDAYOT.jpg ")
+    os.system("rm /root/thebot/FRIDAYOT.jpg ")
 
 
 CMD_HELP.update(

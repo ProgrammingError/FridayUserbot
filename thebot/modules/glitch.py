@@ -16,8 +16,8 @@ import os
 from glitch_this import ImageGlitcher
 from telethon.tl.types import MessageMediaPhoto
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd, sudo_cmd
 
 glitcher = ImageGlitcher()
 DURATION = 200  # Set this to however many centiseconds each frame should be visible for

@@ -19,7 +19,7 @@ from telethon.tl.types import (
 )
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 @friday.on(friday_on_cmd(pattern="unbanall ?(.*)"))

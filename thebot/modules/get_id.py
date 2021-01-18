@@ -2,8 +2,8 @@
 Syntax: .get_id"""
 from telethon.utils import pack_bot_file_id
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 
 @friday.on(friday_on_cmd("get_id"))

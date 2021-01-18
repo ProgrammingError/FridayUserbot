@@ -2,8 +2,8 @@
 import time
 from datetime import datetime
 
-from fridaybot.__init__ import Lastupdate
-from fridaybot.utils import friday_on_cmd
+from thebot.__init__ import Lastupdate
+from thebot.utils import friday_on_cmd
 
 
 def get_readable_time(seconds: int) -> str:
@@ -44,4 +44,4 @@ async def _(event):
     end = datetime.now()
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - Lastupdate))
-    await event.edit(f"🔰 Friday Userbot Has Been Restarted Or Updated {uptime} Ago !")
+    await event.edit(f"🔰 ʄʀɨɖǟʏ Userbot Has Been Restarted Or Updated {uptime} Ago !")

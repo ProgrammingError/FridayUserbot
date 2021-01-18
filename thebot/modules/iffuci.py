@@ -6,7 +6,7 @@ from datetime import datetime
 
 import requests
 
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 
 def progress(current, total):

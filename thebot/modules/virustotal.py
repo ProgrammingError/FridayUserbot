@@ -6,9 +6,9 @@ import time
 import requests
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
-from fridaybot.Configs import Config
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
+from thebot.Configs import Config
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 # from var import var
 
@@ -86,7 +86,7 @@ async def download(target_file):
             "Need to get an API key from https://virustotal.com\nModule stopping!"
         )
         return
-    await friday.edit("Processing using fridaybot server ( ◜‿◝ )♡")
+    await friday.edit("Processing using thebot server ( ◜‿◝ )♡")
     input_str = Config.VIRUSTOTAL_API_KEY
     if not os.path.isdir(sedpath):
         os.makedirs(sedpath)
@@ -121,7 +121,7 @@ async def download(target_file):
         await friday.edit("your file is larger than 32 mb.")
     try:
         await friday.edit(
-            f"<b><u> File Scan Request Complete</u></b>\n\n<b>Link of the report:-</b>\n{b}\n\nNote:- Please open the link after 5-10 minutes.\n\n<b>Virus Scan Completed By Friday\nGet Your Own Friday From @FRIDAYCHAT</b>",
+            f"<b><u> File Scan Request Complete</u></b>\n\n<b>Link of the report:-</b>\n{b}\n\nNote:- Please open the link after 5-10 minutes.\n\n<b>Virus Scan Completed By ʄʀɨɖǟʏ\nGet Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT</b>",
             parse_mode="HTML",
         )
     except:

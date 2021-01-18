@@ -1,7 +1,7 @@
 from textblob import TextBlob
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 
 
 @friday.on(admin_cmd(pattern="spellcheck (.*)"))

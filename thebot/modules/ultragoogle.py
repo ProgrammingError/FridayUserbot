@@ -12,8 +12,8 @@ import requests
 from bs4 import BeautifulSoup
 from google_images_download import google_images_download
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 
 def progress(current, total):

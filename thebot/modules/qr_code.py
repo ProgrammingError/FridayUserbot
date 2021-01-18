@@ -10,7 +10,7 @@ import qrcode
 from bs4 import BeautifulSoup
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 
 def progress(current, total):

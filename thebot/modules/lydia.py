@@ -17,8 +17,8 @@ import asyncio, coffeehouse
 from coffeehouse.api import API
 from coffeehouse.lydia import LydiaAI
 from telethon import events
-from fridaybot.utils import admin_cmd
-from fridaybot import CMD_HELP
+from thebot.utils import admin_cmd
+from thebot import CMD_HELP
 from var import Var
 
 # Non-SQL Mode

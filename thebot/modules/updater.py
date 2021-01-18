@@ -15,8 +15,8 @@ from os import environ, execle, path, remove
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 from var import Var
 
 UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
         "**Soft Update Sucessfull, Please Wait For Some Time To Get This Process Completed.**"
     )
     # Spin a new instance of bot
-    args = [sys.executable, "-m", "fridaybot"]
+    args = [sys.executable, "-m", "thebot"]
     execle(sys.executable, *args, environ)
     return
 

@@ -11,8 +11,8 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd, sudo_cmd
 
 # RegEx by https://t.me/c/1220993104/500653 ( @SnapDragon7410 )
 
@@ -37,7 +37,7 @@ async def sticklet(event):
         return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-    # delete the fridaybot command,
+    # delete the thebot command,
     # i don't know why this is required
     await event.delete()
     # https://docs.python.org/3/library/textwrap.html#textwrap.wrap
@@ -64,7 +64,7 @@ async def sticklet(event):
     await event.client.send_file(
         event.chat_id,
         image_stream,
-        caption="FridayOT",
+        caption="ʄʀɨɖǟʏOT",
         reply_to=event.message.reply_to_msg_id,
     )
     # cleanup
@@ -94,7 +94,7 @@ async def sticklet(event):
         return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-    # delete the fridaybot command,
+    # delete the thebot command,
     # i don't know why this is required
     await event.delete()
     # https://docs.python.org/3/library/textwrap.html#textwrap.wrap
@@ -121,7 +121,7 @@ async def sticklet(event):
     await event.client.send_file(
         event.chat_id,
         image_stream,
-        caption="FridayOT",
+        caption="ʄʀɨɖǟʏOT",
         reply_to=event.message.reply_to_msg_id,
     )
     # cleanup

@@ -12,7 +12,7 @@ from hachoir.parser import createParser
 from PIL import Image
 from uniborg.util import friday_on_cmd
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 

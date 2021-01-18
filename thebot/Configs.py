@@ -36,7 +36,7 @@ if ENV:
             "HASH_TO_TORRENT_API", "https://example.com/torrent/{}"
         )
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Friday")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "ʄʀɨɖǟʏ")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         DEEP_API_KEY = os.environ.get("DEEP_API_KEY", None)
@@ -56,7 +56,7 @@ if ENV:
         # DO NOT EDIT BELOW THIS LINE IF YOU DO NOT KNOW WHAT YOU ARE DOING
         # TG API limit. A message can have maximum 4096 characters!
         MAX_MESSAGE_SIZE_LIMIT = 4095
-        # set blacklist_chats where you do not want fridaybot's features
+        # set blacklist_chats where you do not want thebot's features
         UB_BLACK_LIST_CHAT = set(
             int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
         )
@@ -153,7 +153,7 @@ if ENV:
         ANTISPAM_FEATURE = os.environ.get("ANTISPAM_FEATURE", "ENABLE")
         ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/Starkgang/FridayUserbot"
+            "UPSTREAM_REPO", "https://github.com/Starkgang/ʄʀɨɖǟʏUserbot"
         )
         ALIVE_IMAGE = os.environ.get(
             "ALIVE_IMAGE", "https://telegra.ph/file/22535f8051a58af113586.jpg"

@@ -7,8 +7,8 @@ Credits to noone
 
 import asyncio
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("friday"))
@@ -35,6 +35,6 @@ CMD_HELP.update(
     {
         "supportgroup": "**Support Group**\
 \n\n**Syntax : **`.friday`\
-\n**Usage :** Creates link for Friday support group."
+\n**Usage :** Creates link for ʄʀɨɖǟʏ support group."
     }
 )

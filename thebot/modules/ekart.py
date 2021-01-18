@@ -1,7 +1,7 @@
 from uniborg.util import friday_on_cmd
 import requests
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 
 
 
@@ -39,8 +39,8 @@ Status:- {status}
 
 Detailed link:- {urlo}
 
-<u><b>Ekart Search Completed By Friday.
-Get Your Own Friday From @FRIDAYCHAT.</b></u>
+<u><b>Ekart Search Completed By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 
 """
     await borg.send_message(

@@ -16,8 +16,8 @@ import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
-from fridaybot.function import convert_to_image
-from fridaybot.utils import friday_on_cmd
+from thebot.function import convert_to_image
+from thebot.utils import friday_on_cmd
 
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
 

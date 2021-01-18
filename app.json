@@ -1,17 +1,17 @@
 {
-  "name": "Friday-Userbot",
-  "description": "A Userbot Based On Telethon By Friday Devs",
+  "name": "ʄʀɨɖǟʏ-Userbot",
+  "description": "A Userbot Based On Telethon By ʄʀɨɖǟʏ Devs",
   "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
   "keywords": [
     "telegram",
-    "fridaybot",
+    "thebot",
     "plugin",
-    "telegram-fridaybot",
+    "telegram-thebot",
     "productivity"
   ],
-  "repository": "https://github.com/starkgang/FridayUserbot",
+  "repository": "https://github.com/starkgang/ʄʀɨɖǟʏUserbot",
   "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "success_url": "t.me/ʄʀɨɖǟʏOT",
   "stack": "container",
   "env": {
     "ENV": {
@@ -20,7 +20,7 @@
     },
     "TEMP_DOWNLOAD_DIRECTORY": {
       "description": "Where downloaded files will go.",
-      "value": "./fridaybot/DOWNLOADS/",
+      "value": "./thebot/DOWNLOADS/",
       "required": false
     },
     "ALIVE_NAME": {
@@ -62,7 +62,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Midhunkm1294/FridayUserbot, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: Midhunkm1294/ʄʀɨɖǟʏUserbot, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },

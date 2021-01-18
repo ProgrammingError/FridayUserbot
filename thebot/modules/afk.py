@@ -1,4 +1,4 @@
-"""AFK Plugin for @FridayOT
+"""AFK Plugin for @ʄʀɨɖǟʏOT
 Syntax: .afk REASON"""
 import asyncio
 import datetime
@@ -7,7 +7,7 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from fridaybot import CMD_HELP
+from thebot import CMD_HELP
 
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
@@ -93,7 +93,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_ID` "
                 + "for the proper functioning of afk functionality "
-                + "Please Seek Support in @FridayOT\n\n `{}`".format(str(e)),
+                + "Please Seek Support in @ʄʀɨɖǟʏOT\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
@@ -123,7 +123,7 @@ async def on_afk(event):
     afk_since = "**a while ago**"
     current_message_text = event.message.message.lower()
     if "afk" in current_message_text:
-        # fridaybot's should not reply to other fridaybot's
+        # thebot's should not reply to other thebot's
         # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
         return False
     if USER_AFK and not (await event.get_sender()).bot:  # pylint:disable=E0602

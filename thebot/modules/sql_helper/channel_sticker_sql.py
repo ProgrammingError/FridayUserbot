@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, UnicodeText
 
-from fridaybot.modules.sql_helper import BASE, SESSION
+from thebot.modules.sql_helper import BASE, SESSION
 
 
 class Cst(BASE):

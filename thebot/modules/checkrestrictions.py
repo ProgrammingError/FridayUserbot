@@ -6,7 +6,7 @@
 .cr (.*)"""
 from telethon.tl.types import Channel, Chat, User
 
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 
 
 @borg.on(friday_on_cmd(pattern="cr (.*)"))

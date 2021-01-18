@@ -1,8 +1,14 @@
 from anime_downloader.sites import get_anime_class
 
+<<<<<<< HEAD:thebot/modules/animeWorld.py
 from fridaybot import CMD_HELP
 from fridaybot.utils import admin_cmd
 from mal import AnimeSearch, Anime, MangaSearch, Manga
+=======
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
+from mal import AnimeSearch, Anime
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/anime.py
 
 @friday.on(admin_cmd(pattern="anime (.*)"))
 async def _(event):
@@ -38,7 +44,7 @@ async def _(event):
     url5 = search[4].url
 
     await event.edit(
-        f"<b><u>Anime Search Complete</b></u> \n\n\n<b>Title</b>:-  <code>{title1}</code> \n<b>URL Link</b>:- {url1}\n\n<b>Title</b>:-  <code>{title2}</code> \n<b>URL Link</b>:- {url2}\n\n<b>Title</b>:-  <code>{title3}</code>\n<b>URL Link</b>:- {url3}\n\n<b>Title</b>:-  <code>{title4}</code> \n<b>URL Link</b>:- {url4}\n\n<b>Title</b>:-  <code>{title5}</code> \n<b>URL Link</b>:- {url5}\n\n<b>Links Gathered By Friday\nGet Your Own Friday From @FRIDAYCHAT</b>",
+        f"<b><u>Anime Search Complete</b></u> \n\n\n<b>Title</b>:-  <code>{title1}</code> \n<b>URL Link</b>:- {url1}\n\n<b>Title</b>:-  <code>{title2}</code> \n<b>URL Link</b>:- {url2}\n\n<b>Title</b>:-  <code>{title3}</code>\n<b>URL Link</b>:- {url3}\n\n<b>Title</b>:-  <code>{title4}</code> \n<b>URL Link</b>:- {url4}\n\n<b>Title</b>:-  <code>{title5}</code> \n<b>URL Link</b>:- {url5}\n\n<b>Links Gathered By ʄʀɨɖǟʏ\nGet Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT</b>",
         parse_mode="HTML",
     )
     await ommhg.delete()

@@ -14,8 +14,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
-from fridaybot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
-from fridaybot.utils import register
+from thebot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
+from thebot.utils import register
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -94,7 +94,7 @@ async def carbon_api(e):
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="<< `Here's your carbon!` \n **Carbonised Using** [Friday](https://github.com/Starkgang/FridayUserbot)>>\n**Colour Scheme: **`{}`".format(
+            caption="<< `Here's your carbon!` \n **Carbonised Using** [ʄʀɨɖǟʏ](https://github.com/Starkgang/ʄʀɨɖǟʏUserbot)>>\n**Colour Scheme: **`{}`".format(
                 color_name
             ),
             force_document=True,

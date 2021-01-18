@@ -2,8 +2,8 @@ import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from fridaybot import CMD_HELP, bot
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP, bot
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd(pattern="netease ?(.*)"))

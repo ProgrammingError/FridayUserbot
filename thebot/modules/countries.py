@@ -20,8 +20,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
-from fridaybot import CMD_HELP, sclient
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd, admin_cmd
+from thebot import CMD_HELP, sclient
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd, admin_cmd
 from countryinfo import CountryInfo
 
 
@@ -120,8 +120,8 @@ wikipedia:- {wiki}</b>
 
 
 <u><b>
-Information Gathered By Friday.
-Get Your Own Friday From @FRIDAYCHAT.</b></u>
+Information Gathered By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 """
     
     

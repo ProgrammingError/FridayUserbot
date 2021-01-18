@@ -1,12 +1,12 @@
 from telethon import events
 
-from fridaybot.modules.sql_helper.PostAppender_sql import (
+from thebot.modules.sql_helper.PostAppender_sql import (
     add_new_datas_in_db,
     is_data_indbs,
     is_footer,
     remove_dataz,
 )
-from fridaybot.utils import admin_cmd
+from thebot.utils import admin_cmd
 
 lulstark = [".", ",", "!", "'"]
 

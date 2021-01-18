@@ -18,8 +18,8 @@ import sys
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen, urlretrieve
 from uniborg.util import friday_on_cmd
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 
 @friday.on(admin_cmd(pattern="book (.*)"))
 async def _(event):
@@ -55,9 +55,9 @@ async def _(event):
                 f.write("\n"+title)
                 f.write("\nBook link:- " + link+"\n\n")
 
-        f.write("By Friday.")
+        f.write("By ʄʀɨɖǟʏ.")
         f.close()
-        caption="By Friday.\n Get Your Friday From @FRIDAYCHAT"
+        caption="By ʄʀɨɖǟʏ.\n Get Your ʄʀɨɖǟʏ From @FRIDAYCHAT"
         
         await borg.send_file(event.chat_id, "book.txt", caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY FRIDAY. GET YOUR OWN FRIDAY FROM @FRIDAYCHAT.**")
         os.remove("book.txt")

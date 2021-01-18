@@ -8,8 +8,8 @@ Available Commands:
 import os
 import sys
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
 @friday.on(friday_on_cmd("restart"))
@@ -41,8 +41,8 @@ CMD_HELP.update(
     {
         "power_tools": "**Power Tools**\
 \n\n**Syntax : **`.restart`\
-\n**Usage :** restarts your Friday userbot.\
+\n**Usage :** restarts your ʄʀɨɖǟʏ userbot.\
 \n\n**Syntax : **`.shutdown`\
-\n**Usage :** Shuts down your Friday userbot."
+\n**Usage :** Shuts down your ʄʀɨɖǟʏ userbot."
     }
 )

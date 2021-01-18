@@ -1,7 +1,7 @@
 from textblob import TextBlob
 
-from fridaybot.Configs import Config
-from fridaybot.utils import admin_cmd
+from thebot.Configs import Config
+from thebot.utils import admin_cmd
 
 
 @friday.on(admin_cmd(pattern="(.*)"))

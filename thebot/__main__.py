@@ -5,12 +5,12 @@ from sys import argv
 import telethon.utils
 from telethon import TelegramClient
 
-from fridaybot import bot
-from fridaybot.Configs import Config
-from fridaybot.utils import load_module, start_assistant
+from thebot import bot
+from thebot.Configs import Config
+from thebot.utils import load_module, start_assistant
 from var import Var
 
-sed = logging.getLogger("Friday")
+sed = logging.getLogger("ʄʀɨɖǟʏ")
 
 
 async def add_bot(bot_token):
@@ -34,7 +34,7 @@ else:
 
 import glob
 
-path = "fridaybot/modules/*.py"
+path = "thebot/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -43,17 +43,17 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "fridaybot/modules/assistant/*.py"
+    path = "thebot/modules/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
             path1 = Path(f.name)
             shortname = path1.stem
             start_assistant(shortname.replace(".py", ""))
-    sed.info("Friday And Assistant Bot Have Been Installed Successfully !")
+    sed.info("ʄʀɨɖǟʏ And Assistant Bot Have Been Installed Successfully !")
 else:
-    sed.info("Friday Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @FridayOT For Any Support Or Doubts")
+    sed.info("ʄʀɨɖǟʏ Has Been Installed Sucessfully !")
+    sed.info("You Can Visit @ʄʀɨɖǟʏOT For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()

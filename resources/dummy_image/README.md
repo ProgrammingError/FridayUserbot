@@ -1,1 +1,1 @@
-# Go to @Fridayot
+# Go to @ʄʀɨɖǟʏot

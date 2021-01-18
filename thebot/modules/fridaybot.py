@@ -6,11 +6,11 @@ Available Commands:
 
 import asyncio
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd
 
 
-@friday.on(friday_on_cmd("fridaybot"))
+@friday.on(friday_on_cmd("thebot"))
 async def _(event):
     if event.fwd_from:
         return
@@ -32,8 +32,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "fridaybot": "**Fridaybot**\
-\n\n**Syntax : **`.fridaybot`\
-\n**Usage :** Gives you Friday guide."
+        "thebot": "**ʄʀɨɖǟʏbot**\
+\n\n**Syntax : **`.thebot`\
+\n**Usage :** Gives you ʄʀɨɖǟʏ guide."
     }
 )

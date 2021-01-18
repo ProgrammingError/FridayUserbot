@@ -1,8 +1,8 @@
 from uniborg.util import friday_on_cmd
 import requests
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
-from fridaybot.Configs import Config
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
+from thebot.Configs import Config
 
 
 

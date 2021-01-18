@@ -2,14 +2,14 @@ import json
 import os
 import requests
 from uniborg.util import friday_on_cmd
-from fridaybot import CMD_HELP
-from fridaybot.utils import admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import admin_cmd
 from sys import argv
 import urllib3
 import os
 
 
-from fridaybot.utils import friday_on_cmd
+from thebot.utils import friday_on_cmd
 data = {
    "User-Agent": "NordApp android (playstore/2.8.6) Android 9.0.0",
    "Content-Length": "55",
@@ -86,7 +86,7 @@ async def zee5(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!ZEE5 HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )
@@ -130,7 +130,7 @@ async def vypr(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!NORD HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )
@@ -174,7 +174,7 @@ async def vortex(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!VORTEX HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )
@@ -225,7 +225,7 @@ async def vortex(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!VYPR HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )
@@ -320,7 +320,7 @@ async def voot(event):
                 return
               with open("hits.txt", "w") as hitfile:
                 for s in good_dict:
-                  hitfile.write(s + ' | @FridayOT')
+                  hitfile.write(s + ' | @ʄʀɨɖǟʏOT')
                 await borg.send_file(event.chat_id, "hits.txt", caption=f"**!VOOT HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bady}`")
                 os.remove("hits.txt")
                 return
@@ -330,7 +330,7 @@ async def voot(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in good_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!VOOT HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bady}`"
     )
@@ -373,7 +373,7 @@ async def altbalaji(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!ALTBALAJI HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )
@@ -415,7 +415,7 @@ async def altbalaji(event):
         return
     with open("hits.txt", "w") as hitfile:
         for s in hits_dict:
-            hitfile.write(s + ' | @FridayOT\n')
+            hitfile.write(s + ' | @ʄʀɨɖǟʏOT\n')
     await borg.send_file(
         event.chat_id, "hits.txt", caption=f"**!ALTBALAJI HITS!** \n**HITS :** `{hits}` \n**BAD :** `{bads}`"
     )

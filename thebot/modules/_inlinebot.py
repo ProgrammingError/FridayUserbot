@@ -5,13 +5,13 @@ from math import ceil
 from re import findall
 from youtube_search import YoutubeSearch
 from search_engine_parser import GoogleSearch
-from fridaybot.function import _ytdl
+from thebot.function import _ytdl
 from urllib.parse import quote
 import requests
 from telethon import Button, custom, events, functions
 from youtubesearchpython import VideosSearch
-from fridaybot import ALIVE_NAME, CMD_HELP, CMD_LIST
-from fridaybot.modules import inlinestats
+from thebot import ALIVE_NAME, CMD_HELP, CMD_LIST
+from thebot.modules import inlinestats
 from pornhub_api import PornhubApi
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
@@ -19,7 +19,7 @@ if PMPERMIT_PIC is None:
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Config.PRIVATE_GROUP_ID
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Friday"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ʄʀɨɖǟʏ"
 
 
 @tgbot.on(events.InlineQuery)
@@ -27,7 +27,7 @@ async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("Friday"):
+    if event.query.user_id == bot.uid and query.startswith("ʄʀɨɖǟʏ"):
         rev_text = query[::-1]
         buttons = paginate_help(0, CMD_HELP, "helpme")
         result = builder.article(
@@ -40,11 +40,11 @@ async def inline_handler(event):
     elif event.query.user_id == bot.uid and query == "stats":
         result = builder.article(
             title="Stats",
-            text=f"**Showing Stats For {DEFAULTUSER}'s Friday** \nNote --> Only Owner Can Check This \n(C) @FridayOT",
+            text=f"**Showing Stats For {DEFAULTUSER}'s ʄʀɨɖǟʏ** \nNote --> Only Owner Can Check This \n(C) @ʄʀɨɖǟʏOT",
             buttons=[
                 [custom.Button.inline("Show Stats ?", data="terminator")],
-                [Button.url("Repo 🇮🇳", "https://github.com/StarkGang/FridayUserbot")],
-                [Button.url("Join Channel ❤️", "t.me/Fridayot")],
+                [Button.url("Repo 🇮🇳", "https://github.com/StarkGang/ʄʀɨɖǟʏUserbot")],
+                [Button.url("Join Channel ❤️", "t.me/ʄʀɨɖǟʏot")],
             ],
         )
         await event.answer([result])
@@ -107,7 +107,7 @@ async def on_plug_in_callback_query_handler(event):
 )
 async def on_plug_in_callback_query_handler(event):
     if not event.query.user_id == bot.uid:
-        sedok = "Who The Fuck Are You? Get Your Own Friday."
+        sedok = "Who The Fuck Are You? Get Your Own ʄʀɨɖǟʏ."
         await event.answer(sedok, cache_time=0, alert=True)
         return
     plugin_name = event.data_match.group(1).decode("UTF-8")
@@ -148,7 +148,7 @@ async def rip(event):
     yt_dl_data = event.data_match.group(1).decode("UTF-8")
     link_s = yt_dl_data
     if event.query.user_id != bot.uid:
-        text = f"Please Get Your Own Friday And Don't Waste My Resources"
+        text = f"Please Get Your Own ʄʀɨɖǟʏ And Don't Waste My Resources"
         await event.answer(text, alert=True)
         return
     is_it = True
@@ -159,7 +159,7 @@ async def rip(event):
     yt_dl_data = event.data_match.group(1).decode("UTF-8")
     link_s = yt_dl_data
     if event.query.user_id != bot.uid:
-        text = f"Please Get Your Own Friday And Don't Waste My Resources"
+        text = f"Please Get Your Own ʄʀɨɖǟʏ And Don't Waste My Resources"
         await event.answer(text, alert=True)
         return
     is_it = False
@@ -186,14 +186,14 @@ async def rip(event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
 async def sed(event):
     if event.query.user_id != bot.uid:
-        sedok = "Who The Fuck Are You? Get Your Own Friday."
+        sedok = "Who The Fuck Are You? Get Your Own ʄʀɨɖǟʏ."
         await event.answer(sedok, cache_time=0, alert=True)
         return
     await event.answer("Back", cache_time=0, alert=False)
     # This Is Copy of Above Code. (C) @SpEcHiDe
     buttons = paginate_help(0, CMD_HELP, "helpme")
-    sed = f"""Friday Userbot Modules Are Listed Here !\n
-For More Help or Support Visit @FridayOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
+    sed = f"""ʄʀɨɖǟʏ Userbot Modules Are Listed Here !\n
+For More Help or Support Visit @ʄʀɨɖǟʏOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
     await event.edit(message=sed, buttons=buttons)
 
 
@@ -274,7 +274,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return
@@ -355,7 +355,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return
@@ -409,7 +409,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return
@@ -454,7 +454,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return
@@ -500,7 +500,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return
@@ -537,7 +537,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy ʄʀɨɖǟʏ To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/ʄʀɨɖǟʏUserbot)",
         )
         await event.answer([resultm])
         return

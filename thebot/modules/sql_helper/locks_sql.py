@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, Column, String
 
-from fridaybot.modules.sql_helper import BASE, SESSION
+from thebot.modules.sql_helper import BASE, SESSION
 
 
 class Locks(BASE):

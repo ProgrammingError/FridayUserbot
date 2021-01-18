@@ -15,9 +15,9 @@ from hachoir.parser import createParser
 from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo
 
-from fridaybot import CMD_HELP, LOGS, TEMP_DOWNLOAD_DIRECTORY
-from fridaybot.events import register
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP, LOGS, TEMP_DOWNLOAD_DIRECTORY
+from thebot.events import register
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 
 async def progress(current, total, event, start, type_of_ps, file_name=None):
@@ -82,9 +82,9 @@ def time_formatter(milliseconds: int) -> str:
 @friday.on(friday_on_cmd(pattern="download(?: |$)(.*)", outgoing=True))
 @friday.on(sudo_cmd(pattern="download(?: |$)(.*)", allow_sudo=True))
 async def download(target_file):
-    """ For .dl command, download files to the fridaybot's server. """
+    """ For .dl command, download files to the thebot's server. """
     friday = await edit_or_reply(target_file, "`Processing ...`")
-    await friday.edit("Processing using fridaybot server ( ◜‿◝ )♡")
+    await friday.edit("Processing using thebot server ( ◜‿◝ )♡")
     input_str = target_file.pattern_match.group(1)
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -246,10 +246,10 @@ async def uploadir(udir_event):
 
 @register(pattern=r".upload (.*)", outgoing=True)
 async def upload(u_event):
-    """ For .upload command, allows you to upload a file from the fridaybot's server """
+    """ For .upload command, allows you to upload a file from the thebot's server """
     await u_event.edit("Processing ...")
     input_str = u_event.pattern_match.group(1)
-    if input_str in ("fridaybot.session", "config.env"):
+    if input_str in ("thebot.session", "config.env"):
         await u_event.edit("`That's a dangerous operation! Not Permitted!`")
         return
     if os.path.exists(input_str):

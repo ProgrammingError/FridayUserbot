@@ -12,14 +12,14 @@ import re
 from telethon import utils
 from telethon.tl import types
 
-from fridaybot import CMD_HELP
-from fridaybot.modules.sql_helper.filter_sql import (
+from thebot import CMD_HELP
+from thebot.modules.sql_helper.filter_sql import (
     add_filter,
     get_all_filters,
     remove_all_filters,
     remove_filter,
 )
-from fridaybot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from thebot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
 
 DELETE_TIMEOUT = 0
 TYPE_TEXT = 0
@@ -37,7 +37,7 @@ async def on_snip(event):
     name = event.raw_text
     if event.chat_id in last_triggered_filters:
         if name in last_triggered_filters[event.chat_id]:
-            # avoid fridaybot spam
+            # avoid thebot spam
             # "I demand rights for us bots, we are equal to you humans." -Henri Koivuneva (t.me/UserbotTesting/2698)
             return False
     snips = get_all_filters(event.chat_id)

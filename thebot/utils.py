@@ -6,9 +6,9 @@ from pathlib import Path
 
 from telethon import events
 
-from fridaybot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
-from fridaybot.Configs import Config
-from fridaybot.wraptools import (
+from thebot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
+from thebot.Configs import Config
+from thebot.wraptools import (
     am_i_admin,
     ignore_bot,
     ignore_fwd,
@@ -98,11 +98,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import fridaybot.modules
-        import fridaybot.utils
+        import thebot.modules
+        import thebot.utils
 
-        path = Path(f"fridaybot/modules/{shortname}.py")
-        name = "fridaybot.modules.{}".format(shortname)
+        path = Path(f"thebot/modules/{shortname}.py")
+        name = "thebot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -112,11 +112,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import fridaybot.modules
-        import fridaybot.utils
+        import thebot.modules
+        import thebot.utils
 
-        path = Path(f"fridaybot/modules/{shortname}.py")
-        name = "fridaybot.modules.{}".format(shortname)
+        path = Path(f"thebot/modules/{shortname}.py")
+        name = "thebot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -125,10 +125,10 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = fridaybot.utils
-        sys.modules["friday.util"] = fridaybot.utils
-        sys.modules["userbot.utils"] = fridaybot.utils
-        sys.modules["userbot.plugins"] = fridaybot.modules
+        sys.modules["uniborg.util"] = thebot.utils
+        sys.modules["friday.util"] = thebot.utils
+        sys.modules["userbot.utils"] = thebot.utils
+        sys.modules["userbot.plugins"] = thebot.modules
         mod.Config = Config
         mod.ignore_grp = ignore_grp()
         mod.ignore_pm = ignore_pm()
@@ -138,10 +138,10 @@ def load_module(shortname):
         mod.borg = bot
         mod.friday = bot
         # support for paperplaneextended
-        sys.modules["fridaybot.events"] = fridaybot.utils
+        sys.modules["thebot.events"] = thebot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["fridaybot.modules." + shortname] = mod
+        sys.modules["thebot.modules." + shortname] = mod
         sedprint.info("Successfully imported " + shortname)
 
 
@@ -153,7 +153,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except:
-            name = f"fridaybot.modules.{shortname}"
+            name = f"thebot.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -252,7 +252,7 @@ def friday_on_cmd(pattern=None, **args):
 
 
 """ Userbot module for managing events.
- One of the main components of the fridaybot. """
+ One of the main components of the thebot. """
 
 import asyncio
 import datetime
@@ -263,7 +263,7 @@ from time import gmtime, strftime
 
 from telethon import events
 
-from fridaybot import bot
+from thebot import bot
 
 
 def register(**args):
@@ -324,7 +324,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/FridayOT)"
+            link = "[Here](https://t.me/ʄʀɨɖǟʏOT)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -654,8 +654,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"fridaybot/modules/assistant/{shortname}.py")
-        name = "fridaybot.modules.assistant.{}".format(shortname)
+        path = Path(f"thebot/modules/assistant/{shortname}.py")
+        name = "thebot.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -666,8 +666,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"fridaybot/modules/assistant/{shortname}.py")
-        name = "fridaybot.modules.assistant.{}".format(shortname)
+        path = Path(f"thebot/modules/assistant/{shortname}.py")
+        name = "thebot.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
@@ -683,5 +683,5 @@ def start_assistant(shortname):
         mod.peru_only = peru_only()
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules["fridaybot.modules.assistant" + shortname] = mod
+        sys.modules["thebot.modules.assistant" + shortname] = mod
         sedprint.info("Assistant Has imported " + shortname)

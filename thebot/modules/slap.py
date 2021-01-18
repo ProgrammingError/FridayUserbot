@@ -10,7 +10,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from uniborg.util import friday_on_cmd
 
-from fridaybot import ALIVE_NAME, CMD_HELP
+from thebot import ALIVE_NAME, CMD_HELP
 
 SLAP_TEMPLATES = [
     "{user1} {hits} {user2} with a {item}.",
@@ -73,7 +73,7 @@ HIT = [
     "bashes",
 ]
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "FridayUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ʄʀɨɖǟʏUserbot"
 
 
 @friday.on(friday_on_cmd(pattern="slap ?(.*)", allow_sudo=True))

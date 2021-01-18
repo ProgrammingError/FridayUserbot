@@ -1,8 +1,8 @@
 import os
 import requests
-from fridaybot import CMD_HELP
-from fridaybot.function import convert_to_image
-from fridaybot.utils import friday_on_cmd, sudo_cmd
+from thebot import CMD_HELP
+from thebot.function import convert_to_image
+from thebot.utils import friday_on_cmd, sudo_cmd
 import json
 import requests
 sedpath = "./yandex/"
@@ -36,8 +36,8 @@ Note:- Yandex is a Russian search engine, so better open link in chrome with aut
 Another Note:- Don't Use This Command continually, Yandex Will Block Your Request.
 
 
-<u><b>Reverse Search Completed By Friday.
-Get Your Own Friday From @FRIDAYCHAT.</b></u>
+<u><b>Reverse Search Completed By ʄʀɨɖǟʏ.
+Get Your Own ʄʀɨɖǟʏ From @FRIDAYCHAT.</b></u>
 
 """
     await borg.send_message(

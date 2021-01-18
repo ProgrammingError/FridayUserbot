@@ -15,8 +15,8 @@ import os
 import requests
 from telethon.tl.types import MessageMediaPhoto
 
-from fridaybot import CMD_HELP
-from fridaybot.utils import friday_on_cmd, sudo_cmd, admin_cmd
+from thebot import CMD_HELP
+from thebot.utils import friday_on_cmd, sudo_cmd, admin_cmd
 from pornhub_api import PornhubApi
 from uniborg.util import friday_on_cmd
 
@@ -29,7 +29,11 @@ async def nsfw(event):
     await event.edit("`Processing..`")
     sed = await event.get_reply_message()
     photo = None
+<<<<<<< HEAD:thebot/modules/nsfw.py
     sedpath = "./fridaydevs/"
+=======
+    sedpath = "/root/thebot/DOWNLOADS/"
+>>>>>>> c1530b7480a7e9f27bd9921a3bdf5024adbc925a:fridaybot/modules/nsfw.py
     if sed and sed.media:
         if isinstance(sed.media, MessageMediaPhoto):
             photo = await borg.download_media(sed.media, sedpath)

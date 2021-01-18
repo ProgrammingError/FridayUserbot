@@ -37,12 +37,12 @@ from pymediainfo import MediaInfo
 from telethon.tl.types import MessageMediaPhoto
 
 BASE_URL = "https://isubtitles.org"
-from fridaybot.Configs import Config
+from thebot.Configs import Config
 import zipfile
 import os
 
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
-from fridaybot import logging
+from thebot import logging
 
 logger = logging.getLogger("[--WARNING--]")
 if not os.path.isdir(sedpath):
@@ -359,10 +359,10 @@ async def apk_dl(app_name, path, event):
         for link in result:
             dl_link = link.get('href')
             r = requests.get(dl_link)
-            with open(f"{path}/{name}@FridayOT.apk", 'wb') as f:
+            with open(f"{path}/{name}@ʄʀɨɖǟʏOT.apk", 'wb') as f:
                 f.write(r.content)
     await event.edit('`Apk, Downloaded. Let me Upload It here.`')
-    final_path = f'{path}/{name}@FridayOT.apk'
+    final_path = f'{path}/{name}@ʄʀɨɖǟʏOT.apk'
     return final_path, name
 
 async def check_if_subbed(channel_id, event, bot):
@@ -378,7 +378,7 @@ async def check_if_subbed(channel_id, event, bot):
         return False
     
 async def _ytdl(url, is_it, event, tgbot):
-    await event.edit("`Ok Downloading This Video / Audio - Please Wait.` \n**Powered By @FridayOT**")
+    await event.edit("`Ok Downloading This Video / Audio - Please Wait.` \n**Powered By @ʄʀɨɖǟʏOT**")
     if is_it:
         opts = {
             "format": "bestaudio",
