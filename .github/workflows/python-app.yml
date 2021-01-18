@@ -1,30 +1,21 @@
-name: docs
-on:
-  push:
-    branches: [ master ]
-    paths: 'fridaybot/*/README.md'
-
+name: Fix
+on: push
 jobs:
-  docit:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@master
-    - name: Copy the Readmes
-      run: |
-        find ./fridaybot/ -type f -name "README.md" | while read fname; do
-          dirname=`dirname "$fname"`
-          foldername=`basename "$dirname"`
-          filename=`basename "$fname"`
-          newname=`echo "$dirname" | sed -e "s/ /_/g"`
-          cp "${dirname}/$filename" "./docs/_myfolder/${foldername}.md"
-        done
-    - name: Commit files
-      run: |
-        git config --local user.email "iam.pro2@outlook.com"
-        git config --local user.name "ProgrammingError"
-        git commit -m "Add changes" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.PAT }}
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "fridaybot"
+          replace: "thebot"
+      - name: Create Pull Request
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Auto Fixes'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: ProgrammingError
+          commit_user_email:  iam.pro2@outlook.com
+          commit_author: ProgrammingError <iam.pro2@outlook.com>
