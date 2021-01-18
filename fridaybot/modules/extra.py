@@ -76,7 +76,7 @@ async def _(event):
 # @register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/StarkGang/FridayUserbot")
+        await e.edit("https://github.com/StarkGang/tattiUserbot")
 
 
 @friday.on(friday_on_cmd("readme$"))

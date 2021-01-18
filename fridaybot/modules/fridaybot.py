@@ -32,8 +32,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "fridaybot": "**Fridaybot**\
+        "fridaybot": "**tattibot**\
 \n\n**Syntax : **`.fridaybot`\
-\n**Usage :** Gives you Friday guide."
+\n**Usage :** Gives you tatti guide."
     }
 )

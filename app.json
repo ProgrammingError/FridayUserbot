@@ -1,6 +1,6 @@
 {
-  "name": "Friday-Userbot",
-  "description": "A Userbot Based On Telethon By Friday Devs",
+  "name": "tatti-Userbot",
+  "description": "A Userbot Based On Telethon By tatti Devs",
   "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "telegram-fridaybot",
     "productivity"
   ],
-  "repository": "https://github.com/starkgang/FridayUserbot",
+  "repository": "https://github.com/starkgang/tattiUserbot",
   "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "success_url": "t.me/tattiOT",
   "stack": "container",
   "env": {
     "ENV": {
@@ -62,7 +62,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Midhunkm1294/FridayUserbot, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: Midhunkm1294/tattiUserbot, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },

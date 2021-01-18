@@ -10,7 +10,7 @@ from uniborg.util import edit_or_reply, friday_on_cmd, sudo_cmd
 from fridaybot import ALIVE_NAME, CMD_HELP
 
 DEL_TIME_OUT = 60
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "FridayUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "tattiUserbot"
 
 
 @friday.on(friday_on_cmd(pattern="autoname"))  # pylint:disable=E0602

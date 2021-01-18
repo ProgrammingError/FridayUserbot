@@ -55,9 +55,9 @@ async def _(event):
                 f.write("\n"+title)
                 f.write("\nBook link:- " + link+"\n\n")
 
-        f.write("By Friday.")
+        f.write("By tatti.")
         f.close()
-        caption="By Friday.\n Get Your Friday From @FRIDAYCHAT"
+        caption="By tatti.\n Get Your tatti From @FRIDAYCHAT"
         
         await borg.send_file(event.chat_id, "book.txt", caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY FRIDAY. GET YOUR OWN FRIDAY FROM @FRIDAYCHAT.**")
         os.remove("book.txt")

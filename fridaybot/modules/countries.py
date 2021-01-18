@@ -120,8 +120,8 @@ wikipedia:- {wiki}</b>
 
 
 <u><b>
-Information Gathered By Friday.
-Get Your Own Friday From @FRIDAYCHAT.</b></u>
+Information Gathered By tatti.
+Get Your Own tatti From @FRIDAYCHAT.</b></u>
 """
     
     
